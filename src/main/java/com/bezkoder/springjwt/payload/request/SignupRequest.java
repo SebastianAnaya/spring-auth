@@ -20,6 +20,19 @@ public class SignupRequest {
   @Size(min = 6, max = 40)
   private String password;
 
+
+  @NotBlank
+  @Size(max = 40)
+  private String celular;
+
+  public String getCelular() {
+    return celular;
+  }
+
+  public void setCelular(String celular) {
+    this.celular = celular;
+  }
+
   public String getUsername() {
     return username;
   }
